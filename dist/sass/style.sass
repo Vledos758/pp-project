@@ -1,0 +1,761 @@
+$background-color-f3f3f3: #f3f3f3
+$color-000000: #000000
+$max-width-1160px: 1160px
+$padding-020px: 0 20px
+$max-width-100: 100%
+$background-color-ffffff: #ffffff
+$border-1pxsolid737cfe: 1px solid #737cfe
+$border-radius-30px: 30px
+$padding-40px: 40px
+$font-size-24px: 24px
+$margin-bottom-20px: 20px
+$padding-20px000: 20px 0 0 0
+$width-39px: 39px
+$height-35px: 35px
+$font-size-16px: 16px
+$font-size-18px: 18px
+$margin-bottom-10px: 10px
+$font-size-36px: 36px
+$height-2px: 2px
+$gap-15px: 15px
+$width-226px: 226px
+$border-radius-50: 50%
+$margin-bottom-5px: 5px
+$font-size-14px: 14px
+$min-height-100px: 100px
+$background-color-f0f4ff: #f0f4ff
+$color-rgba3064175095: rgba(30, 64, 175, 0.95)
+$font-size-32px: 32px
+$color-1e40af: #1e40af
+$color-rgba000064: rgba(0, 0, 0, 0.64)
+$background-color-020b33: #020b33
+$color-cbd5f5: #cbd5f5
+$padding-60px020px: 60px 0 20px
+$border-radius-7px: 7px
+$margin-0010px: 0 0 10px
+$border-top-1pxsolidrgba20321324501: 1px solid rgba(203, 213, 245, 0.1)
+$--primary-blue-737cfe: #737cfe
+$font-size-28px: 28px
+$border-1pxsolidvarprimaryblue: 1px solid var(--primary-blue)
+$background-lineargradient90deg0ea5e901e40af100: linear-gradient(90deg, #0ea5e9 0%, #1e40af 100%)
+$padding-18px0: 18px 0
+$padding-top-60px: 60px
+$margin-bottom-8px: 8px
+$gap-12px: 12px
+$padding-24px40px: 24px 40px
+$box-shadow-04px12pxrgba11512425402: 0 4px 12px rgba(115, 124, 254, 0.2)
+$color-000: #000
+$height-33px: 33px
+$background-color-dbdbdb: #dbdbdb
+$height-624px: 624px
+$color-rgba000057: rgba(0, 0, 0, 0.57)
+$height-300px: 300px
+$padding-60px030px: 60px 0 30px
+$min-width-200px: 200px
+$max-width-400px: 400px
+$color-fff: #fff
+$max-width-1200px: 1200px
+$background-lineargradient90deg0e91e9141e40af100: linear-gradient(90deg, #0e91e9 14%, #1e40af 100%)
+$min-height-71px: 71px
+$padding-80px090px: 80px 0 90px
+$margin-bottom-70px: 70px
+$margin-0025px0: 0 0 25px 0
+$margin-0040px0: 0 0 40px 0
+$padding-15px20px: 15px 20px
+$color-rgba000062: rgba(0, 0, 0, 0.62)
+$border-color-22c55e: #22c55e
+$height-190px: 190px
+$padding-15px40px: 15px 40px
+$min-width-328px: 328px
+$background-color-1ea34d: #1ea34d
+$padding-40px0: 40px 0
+$padding-60px040px: 60px 0 40px
+$margin-0030px0: 0 0 30px 0
+$margin-0020px0: 0 0 20px 0
+
+
+body
+  margin: 0
+  padding: 0
+  font-family: 'Inter', sans-serif
+  background-color: $background-color-f3f3f3
+  color: $color-000000
+.container
+  max-width: $max-width-1160px
+  margin: 0 auto
+  padding: $padding-020px
+  box-sizing: border-box
+img
+  max-width: $max-width-100
+  display: block
+a
+  text-decoration: none
+  color: inherit
+  transition: opacity 0.2s
+a:hover
+  opacity: 0.8
+.card
+  background-color: $background-color-ffffff
+  border: $border-1pxsolid737cfe
+  border-radius: $border-radius-30px
+  padding: $padding-40px
+  margin-bottom: $padding-40px
+  box-sizing: border-box
+h2
+  margin-top: 0
+  font-size: $font-size-24px
+  font-weight: 700
+  margin-bottom: $margin-bottom-20px
+.header-bg
+  background: linear-gradient(
+  90deg,
+  rgb(14, 165, 233) 0%,
+  rgb(30, 64, 175) 100%
+  )
+  padding: $padding-20px000
+  margin-bottom: $padding-40px
+.header-top
+  display: flex
+  justify-content: space-between
+  align-items: center
+  margin-bottom: $padding-40px
+.logo img
+  width: $width-39px
+  height: $height-35px
+.main-nav
+  display: flex
+  gap: $border-radius-30px
+.main-nav a
+  color: $background-color-ffffff
+  font-size: $font-size-16px
+  font-weight: 500
+.header-titles
+  color: $background-color-ffffff
+  margin-bottom: $margin-bottom-20px
+.subtitle
+  font-size: $font-size-18px
+  opacity: 0.9
+  margin-bottom: $margin-bottom-10px
+.main-title
+  font-size: $font-size-36px
+  font-weight: 700
+  margin: 0
+.header-line
+  height: $height-2px
+  background-color: $background-color-ffffff
+  opacity: 0.5
+  margin-top: $padding-40px
+@media (max-width: 768px)
+  .header-top
+    flex-direction: column
+    gap: $margin-bottom-20px
+    align-items: flex-start
+  .main-nav
+    flex-wrap: wrap
+    gap: $gap-15px
+  .main-title
+    font-size: $font-size-24px
+.info-main
+  display: flex
+  gap: $padding-40px
+  margin-bottom: $border-radius-30px
+.merged-image-wrapper
+  position: relative
+  width: $width-226px
+  height: $width-226px
+.profile-mask
+  position: absolute
+  top: 0
+  left: 0
+  width: $max-width-100
+  height: $max-width-100
+  z-index: 1
+.profile-photo
+  position: absolute
+  top: 0
+  left: 0
+  width: $max-width-100
+  height: $max-width-100
+  border-radius: $border-radius-50
+  object-fit: cover
+  z-index: 2
+.info-text
+  flex: 1
+  font-size: $font-size-16px
+  line-height: 1.5
+.director-section
+  border-top: $border-1pxsolid737cfe
+  padding-top: $margin-bottom-20px
+  display: flex
+  justify-content: space-between
+  align-items: flex-end
+  flex-wrap: wrap
+  gap: $margin-bottom-20px
+.director-name
+  font-size: $margin-bottom-20px
+  font-weight: 700
+  margin-bottom: $margin-bottom-5px
+.director-title
+  font-size: $font-size-14px
+.director-contacts
+  text-align: right
+  font-size: $font-size-16px
+@media (max-width: 768px)
+  .info-main
+    flex-direction: column
+    align-items: center
+  .director-section
+    flex-direction: column
+    align-items: flex-start
+  .director-contacts
+    text-align: left
+.news-grid
+  display: grid
+  grid-template-columns: repeat(2, 1fr)
+  gap: $margin-bottom-20px
+  margin-bottom: $margin-bottom-20px
+.news-item
+  border: $border-1pxsolid737cfe
+  border-radius: $border-radius-30px
+  padding: $margin-bottom-20px
+  min-height: $min-height-100px
+  display: flex
+  align-items: center
+  justify-content: center
+  text-align: center
+  font-weight: 500
+  font-size: $font-size-16px
+  transition: background-color 0.2s
+  cursor: pointer
+.news-item:hover
+  background-color: $background-color-f0f4ff
+.all-news
+  display: block
+  text-align: right
+  color: $color-rgba3064175095
+  font-weight: 700
+  font-size: $font-size-16px
+@media (max-width: 768px)
+  .news-grid
+    grid-template-columns: 1fr
+.hotline-phone
+  font-size: $font-size-32px
+  font-weight: 700
+  color: $color-1e40af
+  margin-bottom: $margin-bottom-10px
+.hotline-desc
+  font-size: $font-size-18px
+  color: $color-rgba000064
+  line-height: 1.4
+.resources-grid
+  display: grid
+  grid-template-columns: 1fr 1fr
+  gap: $padding-40px
+.resource-col
+  display: flex
+  flex-direction: column
+  gap: $gap-15px
+.resource-link
+  text-decoration: underline
+  font-size: $font-size-16px
+  line-height: 1.4
+@media (max-width: 768px)
+  .resources-grid
+    grid-template-columns: 1fr
+    gap: $margin-bottom-20px
+.site-footer
+  background-color: $background-color-020b33
+  color: $color-cbd5f5
+  padding: $padding-60px020px
+.footer-content
+  display: grid
+  grid-template-columns: 1.5fr 1fr 1.5fr
+  gap: $padding-40px
+  margin-bottom: $padding-40px
+.footer-col h3
+  font-size: $font-size-18px
+  font-weight: 700
+  margin-top: 0
+  margin-bottom: $margin-bottom-20px
+  color: $color-cbd5f5
+.footer-col h4
+  font-size: $font-size-16px
+  font-weight: 700
+  margin-top: 0
+  margin-bottom: $gap-15px
+  color: $color-cbd5f5
+.socials
+  display: flex
+  align-items: center
+  gap: $margin-bottom-10px
+.social-icon img
+  width: $border-radius-30px
+  height: $border-radius-30px
+  border-radius: $border-radius-7px
+.footer-nav a
+  display: block
+  margin-bottom: $margin-bottom-10px
+  color: $color-cbd5f5
+.contact-col p
+  margin: $margin-0010px
+  line-height: 1.4
+.copyright
+  text-align: center
+  font-size: $font-size-14px
+  opacity: 0.8
+  padding-top: $margin-bottom-20px
+  border-top: $border-top-1pxsolidrgba20321324501
+@media (max-width: 768px)
+  .footer-content
+    grid-template-columns: 1fr
+    gap: $border-radius-30px
+/* about:  */
+:root
+  --primary-blue: $--primary-blue-737cfe
+  --text-dark: $color-000000
+  --text-light: $background-color-ffffff
+  --bg-gray: $background-color-f3f3f3
+  --footer-bg: $background-color-020b33
+  --footer-text: $color-cbd5f5
+*
+  box-sizing: border-box
+body
+  font-family: 'Inter', sans-serif
+  margin: 0
+  padding: 0
+  background-color: var(--bg-gray)
+  color: var(--text-dark)
+  line-height: 1.5
+img
+  max-width: $max-width-100
+  display: block
+a
+  text-decoration: none
+  color: inherit
+ul
+  list-style: none
+  padding: 0
+  margin: 0
+h1,
+h2,
+h3,
+p
+  margin: 0
+.container
+  max-width: $max-width-1160px
+  margin: 0 auto
+  padding: $padding-020px
+  width: $max-width-100
+.section-title
+  font-size: $font-size-28px
+  font-weight: 700
+  margin-bottom: $font-size-24px
+  color: var(--text-dark)
+.card
+  background-color: $background-color-ffffff
+  border: $border-1pxsolidvarprimaryblue
+  border-radius: $border-radius-30px
+  padding: $padding-40px
+  width: $max-width-100
+.spacer
+  height: $padding-40px
+.site-header
+  background: $background-lineargradient90deg0ea5e901e40af100
+  color: white
+  padding: $padding-18px0
+.header-inner
+  display: flex
+  justify-content: space-between
+  align-items: center
+.logo-group
+  display: flex
+  align-items: center
+  gap: $gap-15px
+.logo-img
+  width: $width-39px
+  height: $height-35px
+  object-fit: contain
+.site-title
+  font-size: $font-size-18px
+  font-weight: 600
+  white-space: nowrap
+.main-nav ul
+  display: flex
+  gap: $border-radius-30px
+.main-nav a
+  font-size: $font-size-16px
+  font-weight: 500
+  transition: opacity 0.2s
+.main-nav a:hover
+  opacity: 0.8
+@media (max-width: 900px)
+  .header-inner
+    flex-direction: column
+    gap: $margin-bottom-20px
+  .site-title
+    font-size: $font-size-16px
+    white-space: normal
+    text-align: center
+  .main-nav ul
+    gap: $margin-bottom-20px
+    flex-wrap: wrap
+    justify-content: center
+.content-section
+  padding-top: $padding-top-60px
+.info-card
+  display: flex
+  flex-direction: column
+  gap: $border-radius-30px
+.info-group h3
+  font-size: $font-size-16px
+  font-weight: 700
+  margin-bottom: $margin-bottom-8px
+.info-group p
+  font-size: $font-size-16px
+  font-weight: 400
+.info-group a
+  text-decoration: underline
+.locations-card
+  padding: $padding-40px
+.location-group h3
+  font-size: $font-size-16px
+  font-weight: 700
+  margin-bottom: $font-size-16px
+.address-list
+  display: flex
+  flex-direction: column
+  gap: $gap-12px
+.address-list li
+  font-size: $font-size-16px
+  line-height: 1.4
+.documents-grid
+  display: flex
+  flex-direction: column
+  gap: $margin-bottom-20px
+.doc-card
+  background-color: $background-color-ffffff
+  border: $border-1pxsolid737cfe
+  border-radius: $margin-bottom-20px
+  padding: $padding-24px40px
+  display: flex
+  justify-content: space-between
+  align-items: center
+  gap: $margin-bottom-20px
+  transition: box-shadow 0.2s
+.doc-card:hover
+  box-shadow: $box-shadow-04px12pxrgba11512425402
+.doc-text
+  font-size: $font-size-16px
+  font-weight: 400
+  color: $color-000
+  line-height: 1.4
+.doc-icon img
+  width: $border-radius-30px
+  height: $height-33px
+  flex-shrink: 0
+@media (max-width: 768px)
+  .doc-card
+    padding: $margin-bottom-20px
+    flex-direction: column
+    align-items: flex-start
+  .doc-icon
+    align-self: flex-end
+.content-section:last-of-type
+  padding-bottom: $padding-top-60px
+.map-card-container
+  padding: $padding-40px
+  display: flex
+  justify-content: center
+  align-items: center
+.map-placeholder
+  background-color: $background-color-dbdbdb
+  border: $border-1pxsolid737cfe
+  border-radius: $border-radius-30px
+  width: $max-width-100
+  height: $height-624px
+  display: flex
+  justify-content: center
+  align-items: center
+.map-label
+  font-size: $font-size-32px
+  color: $color-rgba000057
+  font-weight: 500
+@media (max-width: 768px)
+  .map-placeholder
+    height: $height-300px
+.site-footer
+  background-color: $background-color-020b33
+  color: $color-cbd5f5
+  padding: $padding-60px030px
+.footer-top
+  display: flex
+  justify-content: space-between
+  flex-wrap: wrap
+  gap: $padding-40px
+  margin-bottom: $padding-top-60px
+.footer-col
+  flex: 1
+  min-width: $min-width-200px
+.brand-col
+  flex: 2
+  max-width: $max-width-400px
+.footer-brand
+  font-size: $font-size-18px
+  font-weight: 600
+  margin-bottom: $font-size-24px
+  line-height: 1.4
+.socials
+  display: flex
+  flex-direction: column
+  gap: $margin-bottom-10px
+.social-label
+  font-size: $font-size-16px
+.social-icon img
+  width: $border-radius-30px
+  height: $border-radius-30px
+  border-radius: $border-radius-7px
+.footer-heading
+  font-size: $font-size-18px
+  font-weight: 600
+  margin-bottom: $font-size-16px
+  color: $color-cbd5f5
+.footer-nav li
+  margin-bottom: $gap-12px
+.footer-nav a:hover,
+.footer-address a:hover
+  text-decoration: underline
+  color: $color-fff
+.footer-address
+  font-style: normal
+  display: flex
+  flex-direction: column
+  gap: $gap-12px
+.footer-bottom
+  border-top: $border-top-1pxsolidrgba20321324501
+  padding-top: $border-radius-30px
+  text-align: center
+.copyright
+  font-size: $font-size-14px
+  opacity: 0.8
+@media (max-width: 768px)
+  .footer-top
+    flex-direction: column
+    gap: $padding-40px
+  .brand-col
+    max-width: $max-width-100
+/* contacts: */
+body
+  font-family: 'Inter', sans-serif
+  margin: 0
+  padding: 0
+  background-color: $background-color-f3f3f3
+  color: $color-000000
+  line-height: 1.5
+*,
+*::before,
+*::after
+  box-sizing: border-box
+img
+  max-width: $max-width-100
+  display: block
+a
+  text-decoration: none
+  color: inherit
+.container
+  width: $max-width-100
+  max-width: $max-width-1200px
+  margin: 0 auto
+  padding: $padding-020px
+#section-header
+  width: $max-width-100
+  background: $background-lineargradient90deg0e91e9141e40af100
+.site-header
+  min-height: $min-height-71px
+  display: flex
+  align-items: center
+.header-content
+  display: flex
+  justify-content: space-between
+  align-items: center
+  flex-wrap: wrap
+  padding-top: $margin-bottom-10px
+  padding-bottom: $margin-bottom-10px
+.logo-group
+  display: flex
+  align-items: center
+  gap: $gap-15px
+.logo-img
+  width: $width-39px
+  height: $height-35px
+  object-fit: contain
+.school-name
+  color: $background-color-ffffff
+  font-weight: 700
+  font-size: $font-size-16px
+.main-nav
+  display: flex
+  gap: $border-radius-30px
+.nav-link
+  color: $background-color-ffffff
+  font-size: $font-size-16px
+  font-weight: 500
+  transition: opacity 0.2s
+.nav-link:hover
+  opacity: 0.8
+@media (max-width: 768px)
+  .header-content
+    flex-direction: column
+    gap: $gap-15px
+    text-align: center
+  .logo-group
+    flex-direction: column
+    gap: $margin-bottom-5px
+  .main-nav
+    gap: $gap-15px
+    font-size: $font-size-14px
+#section-main
+  padding: $padding-80px090px
+.content-block
+  margin-bottom: $margin-bottom-70px
+.page-title
+  font-size: $font-size-32px
+  font-weight: 700
+  margin: $margin-0025px0
+  color: $color-000000
+.info-card
+  background-color: $background-color-ffffff
+  border: $border-1pxsolid737cfe
+  border-radius: $border-radius-30px
+  padding: $padding-40px
+  display: flex
+  flex-direction: column
+  gap: $border-radius-30px
+.info-row
+  font-size: $font-size-18px
+  color: $color-000000
+  line-height: 1.6
+.form-card
+  background-color: $background-color-ffffff
+  border: $border-1pxsolid737cfe
+  border-radius: $border-radius-30px
+  padding: $padding-40px
+.form-title
+  font-size: $font-size-24px
+  font-weight: 700
+  margin: $margin-0040px0
+  color: $color-000000
+.feedback-form
+  display: flex
+  flex-direction: column
+  gap: $border-radius-30px
+.form-input
+  width: $max-width-100
+  padding: $padding-15px20px
+  border: $border-1pxsolid737cfe
+  border-radius: $margin-bottom-10px
+  font-size: $font-size-16px
+  font-family: 'Inter', sans-serif
+  color: $color-000000
+  outline: none
+.form-input::placeholder
+  color: $color-rgba000062
+.form-input:focus
+  border-color: $border-color-22c55e
+.form-textarea
+  height: $height-190px
+  resize: vertical
+.submit-btn
+  background-color: $border-color-22c55e
+  color: $background-color-ffffff
+  border: none
+  border-radius: $margin-bottom-20px
+  padding: $padding-15px40px
+  font-size: $font-size-18px
+  font-weight: 600
+  cursor: pointer
+  align-self: flex-start
+  transition: background-color 0.2s
+  min-width: $min-width-328px
+.submit-btn:hover
+  background-color: $background-color-1ea34d
+@media (max-width: 768px)
+  #section-main
+    padding: $padding-40px0
+  .info-card,
+  .form-card
+    padding: $margin-bottom-20px
+    border-radius: $margin-bottom-20px
+  .page-title
+    font-size: $font-size-24px
+  .info-row
+    font-size: $font-size-16px
+  .submit-btn
+    width: $max-width-100
+    min-width: auto
+#section-footer
+  background-color: $background-color-020b33
+  color: $color-cbd5f5
+  padding: $padding-60px040px
+.footer-grid
+  display: grid
+  grid-template-columns: 2fr 1fr 1.5fr
+  gap: $padding-40px
+  margin-bottom: $padding-top-60px
+.footer-school-name
+  color: $color-cbd5f5
+  font-size: $font-size-18px
+  font-weight: 700
+  margin: $margin-0030px0
+.socials
+  display: flex
+  flex-direction: column
+  gap: $margin-bottom-10px
+.social-label
+  margin: 0
+  font-size: $font-size-16px
+.social-icon img
+  width: $border-radius-30px
+  height: $border-radius-30px
+  border-radius: $border-radius-7px
+.footer-heading
+  color: $color-cbd5f5
+  font-size: $font-size-16px
+  font-weight: 700
+  margin: $margin-0020px0
+  text-transform: uppercase
+.footer-links
+  list-style: none
+  padding: 0
+  margin: 0
+  display: flex
+  flex-direction: column
+  gap: $gap-12px
+.footer-links a
+  color: $color-cbd5f5
+  text-decoration: none
+  transition: color 0.2s
+.footer-links a:hover
+  color: $background-color-ffffff
+.contact-details
+  font-style: normal
+  display: flex
+  flex-direction: column
+  gap: $gap-12px
+.contact-details p
+  margin: 0
+.footer-bottom
+  border-top: $border-top-1pxsolidrgba20321324501
+  padding-top: $border-radius-30px
+  text-align: center
+.copyright
+  margin: 0
+  font-size: $font-size-14px
+  opacity: 0.8
+@media (max-width: 900px)
+  .footer-grid
+    grid-template-columns: 1fr
+    gap: $padding-40px
+  .footer-col
+    text-align: center
+  .socials
+    align-items: center
